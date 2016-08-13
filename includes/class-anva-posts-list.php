@@ -8,7 +8,7 @@ class Anva_Posts_List extends WP_Widget {
 
 		$widget_ops = array(
 			'classname' 	=> 'widget_anva_posts_list',
-			'description' => __( 'Lists most recent posts with thumbnails.', 'anva'  )
+			'description' => __( 'Lists most recent posts with thumbnails.', 'anva-widgets'  )
 		);
 
 		parent::__construct( 'Anva_Posts_List', 'Anva Posts List', $widget_ops );
@@ -53,7 +53,7 @@ class Anva_Posts_List extends WP_Widget {
 		
 		/* Default Value */
 		$instance 		= wp_parse_args( (array) $instance, array(
-			'title' 		=> __( 'Recent Articles', 'anva'  ),
+			'title' 		=> __( 'Recent Articles', 'anva-widgets'  ),
 			'number' 		=> '3',
 			'order' 		=> 'desc',
 			'orderby' 	=> 'date',

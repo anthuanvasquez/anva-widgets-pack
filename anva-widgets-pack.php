@@ -6,23 +6,6 @@ Version: 1.0.0
 Author: Anthuan Vásquez
 Author URI: http://anthuanvasquez.net
 License: GPL2
-
-	Copyright 2015  Anva Framework
-
-	This program is free software; you can redistribute it and/or modify
-	it under the terms of the GNU General Public License version 2,
-	as published by the Free Software Foundation.
-
-	You may NOT assume that you can use any other version of the GPL.
-
-	This program is distributed in the hope that it will be useful,
-	but WITHOUT ANY WARRANTY; without even the implied warranty of
-	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-	GNU General Public License for more details.
-
-	The license for this software can likely be found here:
-	http://www.gnu.org/licenses/gpl-2.0.html
-
 */
 
 // If this file is called directly, abort.
@@ -31,8 +14,8 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 define( 'ANVA_WIDGETS_PLUGIN_VERSION', '1.0.0' );
-define( 'ANVA_WIDGETS_PLUGIN_DIR', dirname( __FILE__ ) );
-define( 'ANVA_WIDGETS_PLUGIN_URI', plugins_url( '' , __FILE__ ) );
+define( 'ANVA_WIDGETS_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
+define( 'ANVA_WIDGETS_PLUGIN_URI', plugin_dir_url( __FILE__ ) );
 
 // Includes widgets
 include_once( ANVA_WIDGETS_PLUGIN_DIR . '/includes/class-anva-posts-list.php' );

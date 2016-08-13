@@ -8,7 +8,7 @@ class Anva_Social_Media_Buttons extends WP_Widget {
 
 		$widget_ops = array(
 			'classname' => 'widget_anva_social_media_buttons',
-			'description' => __( 'Displays buttons of the most popular social networks.', 'anva' )
+			'description' => __( 'Displays buttons of the most popular social networks.', 'anva-widgets' )
 		);
 
 		parent::__construct( 'Anva_Social_Media_Buttons', 'Anva Social Media Buttons', $widget_ops );
@@ -76,7 +76,7 @@ class Anva_Social_Media_Buttons extends WP_Widget {
 		$html 	.= '<p><textarea class="widefat" rows="8" cols="10" id="'. $this->get_field_id('text') .'" name="'. $this->get_field_name('text') .'">'. $text .'</textarea></p>';
 		$html 	.= '<p>';
 		$html 	.= '<input class="widefat" '. checked( $autop, 'on') .' id="'. $this->get_field_id('autop') .'" name="'. $this->get_field_name('autop') .'" type="checkbox" />';
-		$html 	.= '<label for="'. $this->get_field_id('autop') .'">'. __( 'Add automatically paragraphs ', 'anva' ) .'</label>';
+		$html 	.= '<label for="'. $this->get_field_id('autop') .'">'. __( 'Add automatically paragraphs ', 'anva-widgets' ) .'</label>';
 		$html 	.= '</p>';
 
 		echo $html;

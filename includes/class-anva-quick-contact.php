@@ -10,7 +10,7 @@ class Anva_Quick_Contact extends WP_Widget {
 
 		$widget_ops = array(
 			'classname' => 'widget_anva_quick_contact',
-			'description' => __( 'Shows a contact form.', 'anva' )
+			'description' => __( 'Shows a contact form.', 'anva-widgets' )
 		);
 
 		parent::__construct( 'Anva_Quick_Contact', 'Anva Quick Contact', $widget_ops );
@@ -89,7 +89,7 @@ class Anva_Quick_Contact extends WP_Widget {
 		
 		/* Default Value */
 		$instance = wp_parse_args( (array) $instance, array(
-			'title' => __( 'Quick Contact', 'anva' ),
+			'title' => __( 'Quick Contact', 'anva-widgets' ),
 			'text' 	=> '',
 			'phone'	=> '',
 			'email'	=> '',
