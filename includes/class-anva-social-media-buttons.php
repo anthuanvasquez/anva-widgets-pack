@@ -4,7 +4,7 @@
 class Anva_Social_Media_Buttons extends WP_Widget {
 
 	/* Create Widget Function */
-	function Anva_Social_Media_Buttons() {
+	function __construct() {
 
 		$widget_ops = array(
 			'classname' => 'widget_anva_social_media_buttons',

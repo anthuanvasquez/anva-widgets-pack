@@ -4,7 +4,7 @@
 class Anva_Posts_List extends WP_Widget {
 
 	/* Create Widget Function */
-	function Anva_Posts_List() {
+	function __construct() {
 
 		$widget_ops = array(
 			'classname' 	=> 'widget_anva_posts_list',
@@ -26,7 +26,7 @@ class Anva_Posts_List extends WP_Widget {
 		$orderby   = $instance['orderby'];
 		$thumbnail = $instance['thumbnail'];
  
-		echo $before_widget;		
+		echo $before_widget;
 
  		/* Title */
 		if ( ! empty( $title ) ) {

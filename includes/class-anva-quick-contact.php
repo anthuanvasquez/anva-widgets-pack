@@ -6,7 +6,7 @@
 class Anva_Quick_Contact extends WP_Widget {
 
 	/* Create Widget Function */
-	function Anva_Quick_Contact() {
+	function __construct() {
 
 		$widget_ops = array(
 			'classname' => 'widget_anva_quick_contact',
